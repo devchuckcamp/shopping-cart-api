@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
+
+
+
+
+
 //Get Currently logged in user
 Route::middleware('auth:api')->get('/user', function (Request $request) {
    
@@ -20,11 +25,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+
+
+
 Route::group([ 'prefix' => 'v1', 'namespace' => 'Api' ], function() {
 
     Route::group([ 'namespace' => 'V1' ], function() {
 
-    	
     	// DEPRECATED - passport now handling auth routes while front end handles login with google
 
     	// Route::get('login/google', 'AuthenticateController@redirectToProvider');
@@ -32,17 +39,21 @@ Route::group([ 'prefix' => 'v1', 'namespace' => 'Api' ], function() {
    		// Route::post('logout', 'AuthenticateController@logout');
    		
     	// Users
-   		Route::resource('users',              					'UserController',        						[ 'except' => ['create', 'edit'] ]);
-   		Route::resource('user-roles',              				'UserRoleController',        					[ 'except' => ['create', 'edit'] ]);
+   		Route::middleware('auth:api')->resource('users',              					'UserController',        						[ 'except' => ['create', 'edit'] ]);
+   		Route::middleware('auth:api')->resource('user-roles',              				'UserRoleController',        					[ 'except' => ['create', 'edit'] ]);
    		// Admin
-   		Route::resource('admins',              					'AdminController',        						[ 'except' => ['create', 'edit'] ]);
+   		Route::middleware('auth:api')->resource('admins',              					'AdminController',        						[ 'except' => ['create', 'edit'] ]);
    		//Buyer
-   		Route::resource('buyers',              					'BuyerController',        					[ 'except' => ['create', 'edit'] ]);
-
+   		Route::middleware('auth:api')->resource('buyers',              					'BuyerController',
+   			[ 'except' => ['create', 'edit'] ]);
    		// Product
-   		Route::resource('products',              				'ProductController',        						[ 'except' => ['create', 'edit'] ]);
+   		Route::middleware('auth:api')->resource('products',              				'ProductController',        					[ 'except' => ['create', 'edit'] ]);
+   		//Unauthenticated
+   		Route::get('products',              				'ProductController@publicIndex');
+   		
    		// Product Group
-   		Route::resource('product-groups',						'ProductGroupController',        					[ 'except' => ['create', 'edit'] ]);
+   		Route::middleware('auth:api')->resource('product-groups',						'ProductGroupController',
+   			[ 'except' => ['create', 'edit'] ]);
 
 
    		// Appointments

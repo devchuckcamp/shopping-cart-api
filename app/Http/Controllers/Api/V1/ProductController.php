@@ -86,4 +86,43 @@ class ProductController
     }
 
 
+
+    public function publicIndex()
+    {
+
+        $params = Input::all();
+
+        // assign resource class to var 
+        $product = $this->resource_class::query();
+
+        /**
+	     * Filters - Name and Specialty
+	     *
+	     */
+
+        // if(isset($params['name'])){
+        //   	$product = $product->where('fname', 'LIKE', '%' . $params['name'] . '%')
+        //      	->orWhere('lname', 'LIKE', '%' . $params['name'] . '%');
+        // }
+
+        // if(isset($params['specialty_id'])){
+	       //  $product = $product->whereHas('productspecialty', function ($q) use ($params) {
+        //          $q->where('id', $params['specialty_id']);
+        //     });
+        // }
+
+        $product = $product->orderBy('created_at','DESC')
+        		->with(['group'])
+        		->paginate();
+   
+        // check if we have a resource
+        if($product){
+            // give back the resource that we need
+            return \Response::json($product, 200);
+        }
+         // give them a 404
+        return $this->response_404();
+
+    }
+
 }
