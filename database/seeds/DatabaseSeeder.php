@@ -194,7 +194,7 @@ class ProducTableSeeder extends Seeder
         				'description' => 'Reactangular Dining Table', 
         				'price' => 200,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     	Product::create([
         				'name' => 'Round Table', 
