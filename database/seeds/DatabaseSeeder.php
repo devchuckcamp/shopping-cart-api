@@ -150,43 +150,65 @@ class ProducTableSeeder extends Seeder
         				'description' => 'Samsung Galaxy S Series 2017', 
         				'price' => 9000,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
     	Product::create([
         				'name' => 'Samsung Note 8', 
         				'description' => 'Samsung Note Series 2017', 
         				'price' => 1300,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
     	Product::create([
         				'name' => 'Samsung Galaxy S8 Plus', 
         				'description' => 'Samsung Galaxy S Plus Series 2017', 
         				'price' => 1100,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
     	Product::create([
         				'name' => 'Apple IPhone 8', 
         				'description' => 'Apple IPhone Series 2017', 
         				'price' => 1200,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
     	Product::create([
         				'name' => 'Apple IPhone  X', 
         				'description' => 'Apple X Series 2017', 
         				'price' => 1600,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
     	Product::create([
         				'name' => 'Apple IPhone 8 Plus', 
-        				'description' => 'Samsung Galaxy S Series 2017', 
+        				'description' => 'Apple 8 Series 2017', 
         				'price' => 1250,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
+        Product::create([
+                        'name' => 'Apple IPhone 6', 
+                        'description' => 'Apple 6 Series 2016', 
+                        'price' => 850,
+                        'image_url' => '',
+                        'product_group_id' => 2
+                    ]);
+        Product::create([
+                        'name' => 'Apple IPhone 6 Plus', 
+                        'description' => 'Apple Plus Series 2016', 
+                        'price' => 850,
+                        'image_url' => '',
+                        'product_group_id' => 2
+                    ]);
+        Product::create([
+                        'name' => 'Apple IPhone 6S Plus', 
+                        'description' => 'Apple S Plus Series 2016', 
+                        'price' => 950,
+                        'image_url' => '',
+                        'product_group_id' => 2
+                    ]);
+
 
     	//Furniture
     	Product::create([
