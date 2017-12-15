@@ -194,42 +194,42 @@ class ProducTableSeeder extends Seeder
         				'description' => 'Reactangular Dining Table', 
         				'price' => 200,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     	Product::create([
         				'name' => 'Round Table', 
         				'description' => 'Round Table', 
         				'price' => 800,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     	Product::create([
         				'name' => 'Working Table', 
         				'description' => '7 X 5 Working Table', 
         				'price' => 600,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     	Product::create([
         				'name' => 'Executive Office Chair', 
         				'description' => 'A comfortable office chair.', 
         				'price' => 300,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     	Product::create([
         				'name' => 'Regular office chair', 
         				'description' => 'Affordable and comfy office chair.', 
         				'price' => 180,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     	Product::create([
         				'name' => 'Conference Table', 
         				'description' => '10 x 5 Rectangular Table, good for conference meetings.', 
         				'price' => 1250,
         				'image_url' => '',
-        				'product_group_id' => 2
+        				'product_group_id' => 1
         			]);
     }
 
