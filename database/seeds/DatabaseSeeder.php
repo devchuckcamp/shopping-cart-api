@@ -309,6 +309,20 @@ class ProducTableSeeder extends Seeder
                         'image_url' => '',
                         'product_group_id' => 1
                     ]);
+        Product::create([
+                        'name' => '12 person Non Cubicle Table', 
+                        'description' => '18 x 5 Rectangular Table.', 
+                        'price' => 650,
+                        'image_url' => '',
+                        'product_group_id' => 1
+                    ]);
+        Product::create([
+                        'name' => '12 person Non Cubicle Table', 
+                        'description' => '18 x 5 Rectangular Table.', 
+                        'price' => 650,
+                        'image_url' => '',
+                        'product_group_id' => 1
+                    ]);
     }
 
 
