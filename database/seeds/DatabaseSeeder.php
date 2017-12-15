@@ -274,6 +274,20 @@ class ProducTableSeeder extends Seeder
                         'image_url' => '',
                         'product_group_id' => 1
                     ]);
+        Product::create([
+                        'name' => '12 Cubicle Table', 
+                        'description' => '18 x 5 Rectangular Table, 12 division.', 
+                        'price' => 450,
+                        'image_url' => '',
+                        'product_group_id' => 1
+                    ]);
+        Product::create([
+                        'name' => '12 Cubicle Table', 
+                        'description' => '18 x 5 Rectangular Table, 12 division.', 
+                        'price' => 450,
+                        'image_url' => '',
+                        'product_group_id' => 1
+                    ]);
     }
 
 
