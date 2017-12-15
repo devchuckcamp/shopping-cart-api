@@ -254,21 +254,21 @@ class ProducTableSeeder extends Seeder
         				'product_group_id' => 1
         			]);
         Product::create([
-                        'name' => '6 Cubicle Table', 
+                        'name' => '6 Person Cubicle Table', 
                         'description' => '10 x 5 Rectangular Table, 6 division.', 
                         'price' => 350,
                         'image_url' => '',
                         'product_group_id' => 1
                     ]);
         Product::create([
-                        'name' => '8 Cubicle Table', 
+                        'name' => '8 Person Cubicle Table', 
                         'description' => '12 x 5 Rectangular Table, 8 division.', 
                         'price' => 450,
                         'image_url' => '',
                         'product_group_id' => 1
                     ]);
         Product::create([
-                        'name' => '10 Cubicle Table', 
+                        'name' => '10  Person Cubicle Table', 
                         'description' => '15 x 5 Rectangular Table, 10 division.', 
                         'price' => 600,
                         'image_url' => '',
@@ -299,6 +299,13 @@ class ProducTableSeeder extends Seeder
                         'name' => '8 person Non Cubicle Table', 
                         'description' => '12 x 5 Rectangular Table.', 
                         'price' => 450,
+                        'image_url' => '',
+                        'product_group_id' => 1
+                    ]);
+        Product::create([
+                        'name' => '10 person Non Cubicle Table', 
+                        'description' => '15 x 5 Rectangular Table.', 
+                        'price' => 580,
                         'image_url' => '',
                         'product_group_id' => 1
                     ]);
