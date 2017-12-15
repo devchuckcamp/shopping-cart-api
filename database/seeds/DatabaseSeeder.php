@@ -182,11 +182,33 @@ class ProducTableSeeder extends Seeder
         			]);
     	Product::create([
         				'name' => 'Apple IPhone 8 Plus', 
-        				'description' => 'Samsung Galaxy S Series 2017', 
+        				'description' => 'Apple 8 Series 2017', 
         				'price' => 1250,
         				'image_url' => '',
-        				'product_group_id' => 1
+        				'product_group_id' => 2
         			]);
+        Product::create([
+                        'name' => 'Apple IPhone 6', 
+                        'description' => 'Apple 6 Series 2016', 
+                        'price' => 850,
+                        'image_url' => '',
+                        'product_group_id' => 2
+                    ]);
+        Product::create([
+                        'name' => 'Apple IPhone 6 Plus', 
+                        'description' => 'Apple Plus Series 2016', 
+                        'price' => 850,
+                        'image_url' => '',
+                        'product_group_id' => 2
+                    ]);
+        Product::create([
+                        'name' => 'Apple IPhone 6S Plus', 
+                        'description' => 'Apple S Plus Series 2016', 
+                        'price' => 950,
+                        'image_url' => '',
+                        'product_group_id' => 2
+                    ]);
+
 
     	//Furniture
     	Product::create([
