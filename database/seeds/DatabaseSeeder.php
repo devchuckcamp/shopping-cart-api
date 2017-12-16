@@ -149,7 +149,7 @@ class ProducTableSeeder extends Seeder
         				'name' => 'Samsung Galaxy S8', 
         				'description' => 'Samsung Galaxy S Series 2017', 
         				'price' => 9000,
-        				'image_url' => '',
+        				'image_url' => ''
         				'product_group_id' => 2
         			]);
     	Product::create([
