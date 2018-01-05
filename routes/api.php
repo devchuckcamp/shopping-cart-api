@@ -95,6 +95,8 @@ Route::group([ 'prefix' => 'v1', 'namespace' => 'Api' ], function() {
 		
 		// Route::resource('specialty',             				'SpecialtyController',	     					[ 'except' => ['create', 'edit'] ]);
 		// Route::resource('audit-trail',             				'AuditTrailController',     					[ 'except' => ['create', 'edit'] ]);
-		
+	
+
+	
 	});
 });
